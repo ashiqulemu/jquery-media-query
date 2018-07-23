@@ -1,0 +1,17 @@
+$(document).ready(function(){
+
+       $(window).resize(function() {
+          var width = $(window).innerWidth();
+              if (width < 425) {
+                 $('.sub-menu li,.scrollable').click(function () {
+                    $("html, body").animate({scrollTop: 640}, 600);
+                     return false;
+                 });
+
+              }
+              else {
+
+              }
+    });
+
+});
